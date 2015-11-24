@@ -17,9 +17,11 @@ test:
   override:
     # build
     - mvn install -f pom.xml 
+    - mvn install -f checkstyle.xml
 
   post:
     # testes report
     - mkdir -p $CIRCLE_TEST_REPORTS/junit/
+    
    
     - find . -type f -regex ".*/target/failsafe-reports/.*xml" -exec cp {} $CIRCLE_TEST_REPORTS/junit/ \;
