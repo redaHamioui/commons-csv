@@ -16,7 +16,7 @@ general:
 test:
   override:
     # build
-    - mvn install -f pom.xml jacoco:report coveralls:report
+    - mvn install -f pom.xml jacoco:report 
   
 
   post:
