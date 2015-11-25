@@ -175,9 +175,7 @@ CSV files of various types.
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-plugin</artifactId>
         <configuration>
-          <excludes>
-            <exclude>**/perf/PerformanceTest.java</exclude>
-          </excludes>
+         <skip>true</skip>
         </configuration>
       </plugin>
       <!-- Allow checkstyle to be run interactively; keep in sync with report config below -->
